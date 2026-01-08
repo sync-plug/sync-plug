@@ -18,7 +18,7 @@ Thank you for your interest in contributing to Sync Plug! We welcome contributio
 ## Development Workflow
 
 ### Branching
--   Use `master` for the latest stable code.
+-   Use `main` for the latest stable code.
 -   Create a new branch for each feature or bug fix:
     ```bash
     git checkout -b feature/my-new-feature
@@ -34,7 +34,7 @@ npm run build
 
 ### Submitting a Pull Request
 1.  Push your branch to your fork.
-2.  Open a Pull Request against the `master` branch.
+2.  Open a Pull Request against the `main` branch.
 3.  Describe your changes and link to any relevant issues.
 
 ## Release Process (Maintainers Only)

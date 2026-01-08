@@ -283,7 +283,7 @@ class PostgreSQLAdapter implements DatabaseAdapter {
 
 - `PlatformConnection` - Union type containing platform-specific connection data (tokens, user IDs, expiration dates, etc.)
 - `OAuthState` - Contains `uid`, `codeVerifier`, `state`, and `createdAt` for OAuth PKCE flows
-- Date fields (`expiresAt`, `lastValidated`, `createdAt`) can be `Date` objects or database-specific types - convert as needed for your database
+- Date fields (`expiresAt`, `lastValidated`, `createdAt`) can be `Date` objects or database-specific types - convert as needed for your database.
 
 ## API Reference
 
