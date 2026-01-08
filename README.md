@@ -1,7 +1,7 @@
 # Sync Plug
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm version](https://badge.fury.io/js/%40sync-plug.svg)](https://badge.fury.io/js/%40sync-plug)
+[![npm version](https://badge.fury.io/js/sync-plug.svg)](https://badge.fury.io/js/sync-plug)
 
 A database-agnostic, framework-agnostic TypeScript library for social media authentication and posting. Consolidates the best features from multiple codebases with complete media support.
 
@@ -39,13 +39,13 @@ If you find this library useful, please consider supporting its development!
 ## Installation
 
 ```bash
-npm install @sync-plug
+npm install sync-plug
 ```
 
 ## Quick Start
 
 ```typescript
-import { SocialAuth, FirestoreAdapter } from "@sync-plug";
+import { SocialAuth, FirestoreAdapter } from "sync-plug";
 import { getFirestore } from "firebase-admin/firestore";
 
 const db = getFirestore();
@@ -146,7 +146,7 @@ const results = await socialAuth.postToAll(userId, {
 ### Firestore Adapter
 
 ```typescript
-import { FirestoreAdapter } from "@sync-plug";
+import { FirestoreAdapter } from "sync-plug";
 import { getFirestore } from "firebase-admin/firestore";
 
 const db = getFirestore();
@@ -156,7 +156,7 @@ const adapter = new FirestoreAdapter(db);
 ### Memory Adapter (for testing)
 
 ```typescript
-import { MemoryAdapter } from "@sync-plug";
+import { MemoryAdapter } from "sync-plug";
 
 const adapter = new MemoryAdapter();
 ```
@@ -166,7 +166,7 @@ const adapter = new MemoryAdapter();
 Implement the `DatabaseAdapter` interface to work with any database. Here's an example using PostgreSQL:
 
 ```typescript
-import { DatabaseAdapter, Platform, PlatformConnection, OAuthState } from "@sync-plug";
+import { DatabaseAdapter, Platform, PlatformConnection, OAuthState } from "sync-plug";
 import { Pool } from "pg";
 
 class PostgreSQLAdapter implements DatabaseAdapter {
