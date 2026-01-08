@@ -1,0 +1,63 @@
+{
+  "name": "sync-plug",
+  "version": "0.1.0",
+  "description": "Database-agnostic social media authentication and posting library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "social-media",
+    "oauth",
+    "twitter",
+    "linkedin",
+    "bluesky",
+    "tiktok",
+    "threads",
+    "posting",
+    "authentication"
+  ],
+  "author": "",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@atproto/api": "^0.17.3",
+    "axios": "^1.6.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "ffmpeg-static": "^5.2.0",
+    "jwt-decode": "^4.0.0",
+    "twitter-api-v2": "^1.27.0",
+    "undici": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.24",
+    "@types/node": "^22",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "firebase-admin": "^12.0.0"
+  },
+  "peerDependenciesMeta": {
+    "firebase-admin": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sync-plug/sync-plug.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sync-plug/sync-plug/issues"
+  },
+  "homepage": "https://github.com/sync-plug/sync-plug#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
