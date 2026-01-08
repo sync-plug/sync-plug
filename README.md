@@ -5,15 +5,29 @@
 
 A database-agnostic, framework-agnostic TypeScript library for social media authentication and posting. Consolidates the best features from multiple codebases with complete media support.
 
+## Table of Contents
+
+- [Support the Project](#support-the-project)
+- [Features](#features)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Supported Platforms](#supported-platforms)
+- [Database Adapters](#database-adapters)
+- [API Reference](#api-reference)
+- [Post Options](#post-options)
+- [Error Handling](#error-handling)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Support the Project
 
 If you find this library useful, please consider supporting its development!
 
-<a href="https://paypal.me/thankyoubyMindDrive" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square&logo=paypal" alt="Donate"></a>  
+<a href="https://www.paypal.com/ncp/payment/2HWXJA8CMNZTU" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square&logo=paypal" alt="Donate"></a>  
 
 ## Features
 
-- **8 Platform Support**: Twitter, LinkedIn, Bluesky, TikTok, Dev.to, Threads, Discord, GitHub
+- **7 Platform Support**: Twitter, LinkedIn, Bluesky, TikTok, Dev.to, Threads, Discord
 - **Complete Media Support**: Images, videos, GIFs with automatic handling
 - **Database Agnostic**: Works with any database via adapter pattern
 - **Framework Agnostic**: Use with any backend framework
@@ -115,11 +129,19 @@ const results = await socialAuth.postToAll(userId, {
 - Embed support
 - Media attachments
 
-### GitHub
-- Personal Access Token
-- Repository management (posting not implemented)
+### Planned Platforms
+- YouTube
+- Facebook
+- Instagram
+- Beehiiv
 
 ## Database Adapters
+
+### Planned Support
+- PostgreSQL
+- Supabase
+*For now, please use the [Custom Adapter](#custom-adapter).*
+
 
 ### Firestore Adapter
 
